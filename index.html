@@ -41,11 +41,15 @@
             <div class="dupla" id="dados">
 
               <form>
-                <input class="campo" type="text" value="First Name"> <br>
-                <input class="campo" type="text" value="Last Name"> <br>
-                <input class="campo" type="email" value="Email Address"> <br>
-                <input class="campo" type="password" value="Password"> <br>
-                <input class="campo" id="submit" type="button" value="CLAIM YOUR FREE TRIAL">
+                <input id="nome" class="campo" type="text" placeholder="First Name"> <br>
+                <label id="lnome" class="msg">First name cannot be empty</label>
+                <input id="sobrenome" class="campo" type="text" placeholder="Last Name"> <br>
+                <label id="lsobrenome" for="sobrenome" class="msg">Last name cannot be empty</label>
+                <input id="email" class="campo" type="email" placeholder="Email Address"> <br>
+                <label id="lemail" for="email" class="msg">E-mail cannot be empty</label>
+                <input id="password" class="campo" type="password" placeholder="Password"> <br>
+                <label id="lpassword" for="password" class="msg">Password cannot be empty</label>
+                <input id="submit" class="campo"  type="button" value="CLAIM YOUR FREE TRIAL">
               </form>
 
               
@@ -67,6 +71,8 @@
       Coded by <a href="#">Andy Rodrigo</a>.
     </p>
   </footer>
+
+  <script src="index.js"></script>
     
 </body>
 
