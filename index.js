@@ -20,15 +20,18 @@ function erro(num){
         case 0:
             nome.style.border= "thin solid hsl(0, 100%, 74%)"
             lnome.style.display= "inline";
+            nome.style.backgroundImage = 'url("imagens/icon-error.svg")'
           break;
         case 1:
             sobrenome.style.border= "thin solid hsl(0, 100%, 74%)";
             lsobrenome.style.display= "inline";
+            sobrenome.style.backgroundImage = 'url("imagens/icon-error.svg")'
           break;
         case 2:
             email.style.border= "thin solid hsl(0, 100%, 74%)";
             lemail.style.display= "inline"; 
-            lemail2.style.display= "none";      
+            lemail2.style.display= "none"; 
+            email.style.backgroundImage = 'url("imagens/icon-error.svg")'     
           break;
         case 3:
             email.value = ''
@@ -37,10 +40,12 @@ function erro(num){
             email.style.border= "thin solid hsl(0, 100%, 74%)";
             lemail.style.display= "none";
             lemail2.style.display= "inline";
+            email.style.backgroundImage = 'url("imagens/icon-error.svg")'
           break;
         case 4:
             password.style.border= "thin solid hsl(0, 100%, 74%)";
             lpassword.style.display= "inline";
+            password.style.backgroundImage = 'url("imagens/icon-error.svg")'
         break;
         default:
             alert("erro")
@@ -56,6 +61,7 @@ function enviar(){
     }else{
         lnome.style.display= "none";
         nome.style.border= "thin solid #ccc";
+        nome.style.backgroundImage = 'none'
     }
     if(sobrenome.value == ''){;
         erro(1)
@@ -63,6 +69,7 @@ function enviar(){
     }else{
         lsobrenome.style.display= "none";
         sobrenome.style.border= "thin solid #ccc";
+        sobrenome.style.backgroundImage = 'none'
     }
     if(email.value == ''){ 
         erro(2)
@@ -74,6 +81,7 @@ function enviar(){
         lemail.style.display= "none";
         lemail2.style.display= "none";
         email.style.border= "thin solid #ccc";
+        email.style.backgroundImage = 'none'
     }
     if(password.value == ''){
         erro(4)
@@ -81,6 +89,7 @@ function enviar(){
     }else{
         lpassword.style.display= "none";
         password.style.border= "thin solid #ccc";
+        password.style.backgroundImage = 'none'
     }
     if(ok == true){
         alert('Dados enviados com sucesso!')
