@@ -8,7 +8,7 @@ body{
 }
 
 article{
-    width: 500px;
+    width: 400px;
     border: solid black 1px;
 }
 
@@ -51,6 +51,8 @@ h4{
 a{
     text-decoration: none;
     font-style: italic;
+    color: goldenrod;
+    cursor: pointer;
 }
 
 #foto{
@@ -80,4 +82,104 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#historia{
+    display: none;
+}
+
+#contagem{
+    display: none;
+    width: 100%;
+}
+
+#momentos{
+    display: none;
+}
+
+#voltar{
+    display: none;
+}
+
+/*contagem*/
+
+.display {
+    width: 100%;
+	padding-bottom: 60px;
+}
+.event_title {	
+	text-align: center;
+}
+
+.clock{
+	width: 100%;
+}
+
+#numbers{
+	width: 100%;
+    margin-top: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.colNumero{
+    
+}
+
+.numero{
+
+}
+/*
+#numbers span{
+	padding: 20px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+#numbers span:nth-child(1){
+  background: #fa5559;
+}
+#numbers span:nth-child(2){
+  background: #26c2b9;
+}
+#numbers span:nth-child(3){
+  background: #f6bc58;
+}
+#numbers span:nth-child(4){
+  background: #2dcb74;
+}
+
+#numbers:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#units{
+    width: 100%;
+    background-color: #9F0000;
+    display: flex;
+    justify-content: space-around;
+
+}
+/*
+#units span{
+	float: left;
+	width: 25%;
+	text-align: center;
+	color: #ddd;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+}*/
+
+span.turn{
+  	animation: turn 0.7s ease forwards;
+}
+
+@keyframes turn{
+	0%{transform: rotateX(0deg)}
+	100%{transform: rotateX(360deg)}
 }
