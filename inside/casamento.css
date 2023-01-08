@@ -77,7 +77,6 @@ a{
     width: 80%;
     text-align: justify;
     margin-bottom: 20px;
-    font-size: 1.2vw;
 }
 
 .flex{
@@ -185,4 +184,10 @@ span.turn{
 @keyframes turn{
 	0%{transform: rotateX(0deg)}
 	100%{transform: rotateX(360deg)}
+}
+
+@media (max-width: 650px) {
+    #texto{
+        font-size: 3.3vw;
+    }
 }
