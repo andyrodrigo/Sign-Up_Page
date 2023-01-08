@@ -1,12 +1,10 @@
 
 const historiaLink = document.getElementById("historiaLink")
 const contagemLink = document.getElementById("contagemLink")
-const momentosLink = document.getElementById("momentosLink")
 const voltarLink = document.getElementById("voltarLink")
 const lista = document.getElementById("lista")
 const historia = document.getElementById("historia")
 const contagem = document.getElementById("contagem")
-const momentos = document.getElementById("momentos")
 const voltar = document.getElementById("voltar")
 
 function mudarTela( num ){
@@ -18,9 +16,6 @@ function mudarTela( num ){
         case 2:
             contagem.style.display = 'flex'
             break;
-        case 3:
-            momentos.style.display = 'flex'
-            break;
     }
     voltar.style.display = 'flex'
 }
@@ -29,7 +24,6 @@ function voltarLista(){
     voltar.style.display = 'none';
     historia.style.display = 'none'
     contagem.style.display = 'none'
-    momentos.style.display = 'none'
     lista.style.display = 'flex'
 }
 
@@ -43,7 +37,7 @@ const hoursUnit = document.querySelector('.hours');// span element that displays
 const minutesUnit = document.querySelector('.minutes');// span element that displays the amount of minutes
 const secondsUnit = document.querySelector('.seconds');// span element that displays the amount of seconds
 
-const startDate = new Date(2023, 4, 29, 16, 00, 00).getTime();// initial date and time the countdown clock started from (Year, Month, Day, Hours, Minutes, Seconds,)
+const startDate = new Date(2023, 3, 29, 16, 00, 00).getTime();// initial date and time the countdown clock started from (Year, Month, Day, Hours, Minutes, Seconds,)
 startDate > Date.now() ? timer(startDate) : calculateFutureDate(startDate);// conditional statement that decides if the timer function should start with the start date or calculate another date
 // timer function takes in a date parameter in milliseconds
 function timer(date){
@@ -100,7 +94,6 @@ function escutadores(){
 
     historiaLink.addEventListener( 'click' , function(){mudarTela(1)} )
     contagemLink.addEventListener( 'click' , function(){mudarTela(2)} )
-    momentosLink.addEventListener( 'click' , function(){mudarTela(3)} )
     voltarLink.addEventListener( 'click' , voltarLista )
 
 }

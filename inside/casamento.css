@@ -77,7 +77,6 @@ a{
     width: 80%;
     text-align: justify;
     margin-bottom: 20px;
-    font-size: 16px;
 }
 
 .flex{
@@ -125,21 +124,36 @@ a{
     display: flex;
     justify-content: space-around;
 }
+
+
 .colNumero{
     
 }
 
 .numero{
-
-}
-/*
-#numbers span{
-	padding: 20px;
-    color: #fff;
+    background-color: #9F0000;
+    padding: 20px;
     border-radius: 20px;
+    color: #fff;
 }
 
+.days{
+    background: #fa5559;
+}
 
+.hours{
+    background: #26c2b9;
+}
+
+.minutes{
+    background: #f6bc58;
+}
+
+.seconds{
+    background: #2dcb74;
+}
+
+/*
 #numbers span:nth-child(1){
   background: #fa5559;
 }
