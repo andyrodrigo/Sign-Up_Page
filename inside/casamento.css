@@ -103,6 +103,10 @@ a{
     display: none;
 }
 
+#jornal{
+    width: 100%;
+}
+
 /*contagem*/
 
 .display {
@@ -152,45 +156,6 @@ a{
 .seconds{
     background: #2dcb74;
 }
-
-/*
-#numbers span:nth-child(1){
-  background: #fa5559;
-}
-#numbers span:nth-child(2){
-  background: #26c2b9;
-}
-#numbers span:nth-child(3){
-  background: #f6bc58;
-}
-#numbers span:nth-child(4){
-  background: #2dcb74;
-}
-
-#numbers:after{
-	content: "";
-	display: block;
-	clear: both;
-}
-
-#units{
-    width: 100%;
-    background-color: #9F0000;
-    display: flex;
-    justify-content: space-around;
-
-}
-/*
-#units span{
-	float: left;
-	width: 25%;
-	text-align: center;
-	color: #ddd;
-	text-transform: uppercase;
-	font-size: 16px;
-	letter-spacing: 2px;
-	text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
-}*/
 
 span.turn{
   	animation: turn 0.7s ease forwards;
