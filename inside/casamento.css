@@ -103,6 +103,11 @@ a{
     display: none;
 }
 
+#jornal{
+    width: 100%;
+}
+
+
 /*contagem*/
 
 .display {
