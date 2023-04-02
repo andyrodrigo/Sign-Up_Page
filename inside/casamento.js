@@ -1,6 +1,7 @@
 
 const historiaLink = document.getElementById("historiaLink")
 const contagemLink = document.getElementById("contagemLink")
+const previaLink = document.getElementById("previaLink")
 const voltarLink = document.getElementById("voltarLink")
 const lista = document.getElementById("lista")
 const historia = document.getElementById("historia")
@@ -16,6 +17,10 @@ function mudarTela( num ){
         case 2:
             contagem.style.display = 'flex'
             break;
+			break;
+		case 3:
+			previa.style.display = 'flex'
+			break;
     }
     voltar.style.display = 'flex'
 }
@@ -24,6 +29,7 @@ function voltarLista(){
     voltar.style.display = 'none';
     historia.style.display = 'none'
     contagem.style.display = 'none'
+	previa.style.display = 'none'
     lista.style.display = 'flex'
 }
 
@@ -94,6 +100,7 @@ function escutadores(){
 
     historiaLink.addEventListener( 'click' , function(){mudarTela(1)} )
     contagemLink.addEventListener( 'click' , function(){mudarTela(2)} )
+	previaLink.addEventListener( 'click' , function(){mudarTela(3)} )
     voltarLink.addEventListener( 'click' , voltarLista )
 
 }
